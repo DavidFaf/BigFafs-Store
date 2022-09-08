@@ -1,4 +1,4 @@
-from name import Item, db
+from main import Item, db
 
 db.create_all()
 
