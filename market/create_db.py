@@ -1,4 +1,6 @@
-from main import Item, db
+from market.models import  db
+from models import User
+from models import Item
 
 db.create_all()
 
@@ -9,6 +11,7 @@ macbook_air = Item(name="MacBook Air M1", serial_number='2232223564', price=1999
                                 description="MacBook Air is a thin, lightweight laptop from Apple. Because it is a full-sized notebook but only weighs three pounds, the laptop falls into a category that vendors are currently calling 'ultraportable.")
 
 
+david = User(username="BigFafs", password_hash='222222', email_address='dfaf@gmail.com')
 # To filter by 
 # for item in Item.query.filter_by(name="Iphone"):
 #     item.name
