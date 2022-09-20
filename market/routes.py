@@ -45,7 +45,6 @@ def login_page():
 
     form = LoginForm()
 
-
     attempted_user = User.query.filter_by(username=form.username.data).first()
     if form.validate_on_submit():
         if attempted_user and attempted_user.password_checker(
@@ -64,8 +63,13 @@ def login_page():
 @app.route('/cart', methods=['GET', 'POST'])
 @login_required
 def cart_page():
-
     return render_template('cart.html')
+
+@app.route('/info')
+def more_info():
+    return render_template('info.html')
+
+
 
 @app.route('/logout')
 def logout_page():

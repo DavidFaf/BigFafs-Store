@@ -62,7 +62,9 @@ Market Place
                     </div>
                     <!-- Product actions-->
                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                        <div class="text-center"><a class="btn btn-outline btn-success" href="#">Add to cart</a>
+                            <a href="{{url_for('more_info')}}"><button class="btn btn-outline-dark mt-auto">More Info</button></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -87,12 +89,14 @@ Market Place
                             </div>
                             <!-- Product price-->
                             <span class="text-muted text-decoration-line-through">$20.00</span>
-                            $18.00
+                            <span class="price">$18.00</span>
                         </div>
                     </div>
                     <!-- Product actions-->
                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                        <div class="text-center"><a class="btn btn-outline btn-success" href="#">Add to cart</a>
+                            <a href="{{url_for('more_info')}}"><button class="btn btn-outline-dark mt-auto">More Info</button></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -109,12 +113,14 @@ Market Place
                             <h5 class="fw-bolder">{{ item.name }}</h5>
                             <!-- Product price-->
                             <span class="text-muted text-decoration-line-through">$50.00</span>
-                            $25.00
+                            <span class="price">$25.00</span>
                         </div>
                     </div>
                     <!-- Product actions-->
                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                        <div class="text-center"><a class="btn btn-outline btn-success" href="#">Add to cart</a>
+                            <a href="{{url_for('more_info')}}"><button class="btn btn-outline-dark mt-auto">More Info</button></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -136,12 +142,14 @@ Market Place
                                 <div class="bi-star-fill"></div>
                             </div>
                             <!-- Product price-->
-                            $40.00
+                            <span class="price">$40.00</span>
                         </div>
                     </div>
                     <!-- Product actions-->
                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                        <div class="text-center"><a class="btn btn-outline btn-success" href="#">Add to cart</a>
+                            <a href="{{url_for('more_info')}}"><button class="btn btn-outline-dark mt-auto">More Info</button></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -158,12 +166,14 @@ Market Place
                             <h5 class="fw-bolder">Sale Item</h5>
                             <!-- Product price-->
                             <span class="text-muted text-decoration-line-through">$50.00</span>
-                            $25.00
+                            <span class="price">$25.00</span>
                         </div>
                     </div>
                     <!-- Product actions-->
                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                        <div class="text-center"><a class="btn btn-outline btn-success" href="#">Add to cart</a>
+                            <a href="{{url_for('more_info')}}"><button class="btn btn-outline-dark mt-auto">More Info</button></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -177,12 +187,14 @@ Market Place
                             <!-- Product name-->
                             <h5 class="fw-bolder">Fancy Product</h5>
                             <!-- Product price-->
-                            $120.00 - $280.00
+                            <span class="price">$120.00 - $280.00</span>
                         </div>
                     </div>
                     <!-- Product actions-->
                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
+                        <div class="text-center"><a class="btn btn-outline btn-success" href="#">Add to cart</a>
+                            <a href="{{url_for('more_info')}}"><button class="btn btn-outline-dark mt-auto">More Info</button></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -207,12 +219,14 @@ Market Place
                             </div>
                             <!-- Product price-->
                             <span class="text-muted text-decoration-line-through">$20.00</span>
-                            $18.00
+                            <span class="price">$18.00</span>
                         </div>
                     </div>
                     <!-- Product actions-->
                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                        <div class="text-center"><a class="btn btn-outline btn-success" href="#">Add to cart</a>
+                            <a href="{{url_for('more_info')}}"><button class="btn btn-outline-dark mt-auto">More Info</button></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -234,12 +248,14 @@ Market Place
                                 <div class="bi-star-fill"></div>
                             </div>
                             <!-- Product price-->
-                            $40.00
+                            <span class="price">$40.00</span>
                         </div>
                     </div>
                     <!-- Product actions-->
                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                        <div class="text-center"><a class="btn btn-outline btn-success" href="#">Add to cart</a>
+                            <a href="{{url_for('more_info')}}"><button class="btn btn-outline-dark mt-auto">More Info</button></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -247,4 +263,12 @@ Market Place
         {% endfor %}
     </div>
 </section>
+<style>
+    .fw-bolder, .price{
+        color: black;
+    }
+    .btn-success{
+        background-color: #33b249;
+    }
+</style>
 {% endblock %}
