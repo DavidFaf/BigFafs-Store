@@ -1,4 +1,5 @@
 from crypt import methods
+from webbrowser import MacOSX
 from market import app
 from flask import render_template, redirect, url_for , flash
 from market.models import Item
@@ -6,6 +7,7 @@ from market.forms import RegisterForm, LoginForm
 from market.models import User
 from market import db
 from flask_login import login_user, logout_user, login_required
+import json
 
 @app.route("/")
 @app.route("/home")
@@ -67,6 +69,7 @@ def cart_page():
 
 @app.route('/info')
 def more_info():
+
     return render_template('info.html')
 
 

@@ -78,7 +78,7 @@ Market Place
                     <div class="card-body p-4">
                         <div class="text-center">
                             <!-- Product name-->
-                            <h5 class="fw-bolder"></h5>
+                            <h5 class="fw-bolder">hhh</h5>
                             <!-- Product reviews-->
                             <div class="d-flex justify-content-center small text-warning mb-2">
                                 <div class="bi-star-fill"></div>
@@ -263,6 +263,31 @@ Market Place
         {% endfor %}
     </div>
 </section>
+<script>
+    
+    let add_to_cart_btns = document.getElementsByClassName('btn-success')
+
+    for(let i=0; i<add_to_cart_btns.length; i++){
+        add_to_cart_btns[i].addEventListener('click', addToCart)
+    }
+    
+    function addToCart(event){
+        '{% for item in items %}'
+        let btn = event.target
+        var card = btn.closest(".card");
+    
+        let item_name= '{{item.name}}'
+        let item_price = '{{item.price}}'
+        let item_image = card.querySelector('.card-img-top').getAttribute("src");
+
+        console.log(item_name)
+        console.log(item_price)
+        console.log(item_image)
+    
+        '{% endfor %}'
+    }
+    
+    </script>
 <style>
     .fw-bolder, .price{
         color: black;
