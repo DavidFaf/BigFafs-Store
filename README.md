@@ -2,7 +2,8 @@
 
 In this project i built an E-commerce store (BigFafs store) using Flask, SqLite3 and vanilla HTML & CSS
 
-This project is similar to 
+This project is similar to <a href="https://github.com/DavidFaf/Ecommerce-Store">E-commerce store</a> i built on my GitHub, except that i built that using Django, you can check it out as well
+
 
 <img width="1440" alt="Screenshot 2022-12-22 at 18 36 07" src="https://user-images.githubusercontent.com/86724208/209194261-a3d665a0-46d7-454d-91cf-648bea7a984d.png">
 
